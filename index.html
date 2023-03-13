@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vueHello</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+
+    <div id="app">
+       <h1 id="message"> {{ message }} {{name}} </h1> 
+       
+       <div id="main-container">
+        <img id="image" v-bind:class="filterClass" v-bind:src="img" alt="img1">
+       </div>
+
+       <div id="second-container">
+        <button @click="addFilter" id="button">Switch on/off</button>
+       </div>
+      
+    </div>    
+
+
+
+      <script src="js/script.js"></script>
+</body>
+</html>
